@@ -1,0 +1,60 @@
+footer { 
+  text-align: center;
+  height: 50px;
+
+  a:link  {
+	padding: 25px;
+    margin: 2px;
+	
+    line-height: 0;
+    font-size: 0;
+    display: inline-block;
+    color:$dark-teal;
+   // border: solid 3px red;
+  }
+
+  a:before  {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    font-size: 50px;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+	  margin-top: -40px;
+	  margin-left:-20px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a:hover {
+    color: $red;
+
+    /*.zen-validate-css:before  {
+      content:"#";
+	  }*/
+	}
+    .zen-validate-html:before {
+      content: "5";
+    }
+    .zen-validate-css:before  {
+      content:"3"
+    }
+    .zen-license:before {
+      content:"c"
+    }
+    .zen-accessibility:before {
+      content:"a"
+    }
+    .zen-github:before  {
+      content:"g"
+    }
+}
+
+
+@media screen and (min-width:$media-width) {
+
+}

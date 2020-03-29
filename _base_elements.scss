@@ -1,0 +1,41 @@
+p { 
+  margin: 0;
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5  {
+  padding: 0;
+  margin: 0;
+}
+
+h3 { 
+  font: bold 2em $secondary-font;
+  color: $teal;
+  font-weight: 100;
+}
+
+a:link { 
+  font-weight: bold; 
+  text-decoration: none; 
+  color: $gold;
+}
+
+a:visited { 
+  font-weight: bold; 
+  text-decoration: none; 
+  color: $teal;
+}
+
+a:hover, a:focus, a:active { 
+  text-decoration: none; 
+  color: $teal;
+  cursor: url('Images/chip.svg'), auto;
+}
+
+abbr {
+  border-bottom: none;
+}
+
+@media screen and (min-width:$media-width) {
+
+}

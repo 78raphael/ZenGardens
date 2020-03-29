@@ -1,0 +1,31 @@
+
+
+.extra2 {
+  height: 30vh;
+  width: 109%;
+  //background-color: $background-color;
+  margin-top: -180px;
+  background: url(Images/cactibg.svg) no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+	position:absolute;
+z-index: 2;
+}
+
+@media screen and (min-width:$media-width) {
+	.extra2 {
+ width: 109%; 
+ height: 63vh;
+ // background-color: $background-color;
+  margin-top: -260px;
+  background: url(Images/cactibg.svg) no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+position:absolute;
+z-index: 100;
+		//border: 1px solid red;
+
+		
+}
+
+}
