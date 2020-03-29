@@ -14,17 +14,22 @@ html {
 
 body {
   font: 100% "Montserrat", sans-serif;
-  line-height: 1.88889;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   color: #204b4b;
   background-color: #f6e5a9;
-  cursor: url("Images/chip1.svg"), auto;
 }
 body abbr[title] {
   text-decoration: none;
 }
 
+@media screen and (min-width: 900px) {
+  body {
+    line-height: 1.88889;
+    cursor: url("Images/chip1.svg"), auto;
+  }
+}
 p {
   margin: 0;
   text-align: justify;
@@ -90,7 +95,6 @@ abbr {
 .intro {
   background-color: #f6e5a9;
   width: 100%;
-  border: 1px solid blue;
 }
 
 .intro h1, h2 {
@@ -105,12 +109,12 @@ abbr {
 header {
   background: url(Images/Star.svg) center no-repeat;
   background-color: #fbd659;
-  background-size: 300px;
+  background-size: 100%;
   background-position-x: center;
   background-position-y: top;
   text-align: center;
   align-items: center;
-  height: 350px;
+  height: 310px;
   padding-top: 15px;
 }
 header::before {
@@ -126,7 +130,7 @@ header::before {
   display: block;
 }
 header h1 {
-  font: 2.6em "Sigmar One", cursive;
+  font: 2.1em "Sigmar One", cursive;
   color: #204b4b;
   line-height: 1em;
   padding: 0;
@@ -135,10 +139,9 @@ header h1 {
 }
 header h2 {
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: lowercase;
   color: #204b4b;
-  line-height: 1.1em;
 }
 
 @keyframes mariachi {
@@ -158,6 +161,18 @@ header h2 {
     transform: rotate(0deg);
   }
 }
+@media screen and (min-width: 900px) {
+  header {
+    height: 350px;
+  }
+  header h1 {
+    font-size: 2.6em;
+  }
+  header h2 {
+    font-size: 1.2em;
+    line-height: 1.1em;
+  }
+}
 .summary {
   padding: 1em;
   background-color: #fbd659;
@@ -172,7 +187,7 @@ header h2 {
   padding: 10px;
 }
 .summary p:nth-child(2) {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 900;
   padding: 25px 0;
 }
@@ -191,6 +206,16 @@ header h2 {
   white-space: pre-line;
 }
 
+@media screen and (min-width: 900px) {
+  .summary p:nth-child(1) {
+    font-size: 1.4rem;
+    margin-top: -15px;
+    padding: 10px;
+  }
+  .summary p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+}
 .preamble {
   padding: 1em;
   margin: 1em 0;
