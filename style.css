@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Sigmar+One&display=swap");
 @font-face {
   font-family: "verdemoderna";
-  src: url(text/verdemoderna.woff) format("woff");
+  src: url(Text/verdemoderna.woff) format("woff");
 }
 html {
   margin: 0;
