@@ -419,7 +419,7 @@ footer {
   height: 50px;
 }
 footer a:link {
-  padding: 25px;
+  padding: 20px;
   margin: 2px;
   line-height: 0;
   font-size: 0;
@@ -430,7 +430,7 @@ footer a:before {
   display: block;
   position: absolute;
   overflow: hidden;
-  font-size: 50px;
+  font-size: 40px;
   text-indent: 0;
   font-family: "verdemoderna";
   speak: none;
@@ -444,9 +444,6 @@ footer a:before {
 }
 footer a:hover {
   color: #ce2027;
-  /*.zen-validate-css:before  {
-     content:"#";
-  }*/
 }
 footer .zen-validate-html:before {
   content: "5";
@@ -464,6 +461,14 @@ footer .zen-github:before {
   content: "g";
 }
 
+@media screen and (min-width: 900px) {
+  footer a:link {
+    padding: 40px;
+  }
+  footer a:before {
+    font-size: 70px;
+  }
+}
 .sidebar li {
   list-style-type: none;
   margin-left: -30px;
