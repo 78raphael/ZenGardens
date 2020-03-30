@@ -233,6 +233,17 @@ header h2 {
   padding-bottom: 10px;
   font-size: 1.1em;
 }
+@media screen and (min-width: 900px) {
+  .preamble h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .preamble p {
+    padding-bottom: 10px;
+    font-size: 1.10.5;
+  }
+}
 
 .explanation {
   padding: 1em;
@@ -249,7 +260,18 @@ header h2 {
 }
 .explanation p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1.1emem;
+}
+@media screen and (min-width: 900px) {
+  .explanation h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .explanation p {
+    padding-bottom: 10px;
+    font-size: 1.1em0.5;
+  }
 }
 
 .participation {
@@ -267,7 +289,18 @@ header h2 {
 }
 .participation p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1.1emem;
+}
+@media screen and (min-width: 900px) {
+  .participation h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .participation p {
+    padding-bottom: 10px;
+    font-size: 1.1em0.5;
+  }
 }
 
 .benefits {
@@ -285,7 +318,18 @@ header h2 {
 }
 .benefits p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1.1emem;
+}
+@media screen and (min-width: 900px) {
+  .benefits h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .benefits p {
+    padding-bottom: 10px;
+    font-size: 1.1em0.5;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -316,7 +360,18 @@ header h2 {
 }
 .requirements p {
   padding-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1.1emem;
+}
+@media screen and (min-width: 900px) {
+  .requirements h3 {
+    height: 11em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .requirements p {
+    padding-bottom: 10px;
+    font-size: 1.1em0.5;
+  }
 }
 
 p[role=contentinfo] {

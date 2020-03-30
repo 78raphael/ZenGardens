@@ -66,7 +66,9 @@ $h-num: 10;
   border: $pixels solid $color;
 }
 
-@mixin regions($image, $font-size: 1em, $bg-size: 170, $bg-y: 5) {
+@mixin regions($image, $font-size: 1, $bg-size: 170, $bg-y: 5) {
+  $fs: #{$font-size};
+  $fa: #{$font-size} + 0.5;
   padding: 1em;
   margin: 1em 0;
   background: url(Images/#{$image}) no-repeat;
@@ -82,6 +84,20 @@ $h-num: 10;
 
   p {
     padding-bottom: 10px;
-    font-size: $font-size; //  change to desired size
+    font-size: #{$fs}em; //  change to desired size
+  }
+
+  @media screen and (min-width: $media-width) { 
+  
+    h3  {
+      height: 11em;
+      text-align: center;
+      line-height: 1.5em;
+    }
+  
+    p {
+      padding-bottom: 10px;
+      font-size: #{$fa}; //  change to desired size
+    }
   }
 }
