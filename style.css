@@ -8,13 +8,16 @@ html {
   padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
   font: 100% "Montserrat", sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
+  text-justify: none;
   margin: 0;
   padding: 0;
   color: #204b4b;
@@ -26,8 +29,7 @@ body abbr[title] {
 
 @media screen and (min-width: 900px) {
   body {
-    line-height: 1.88889;
-    cursor: url("Images/Chip1.svg"), auto;
+    cursor: url("Images/ChipD.svg"), auto;
   }
 }
 p {
@@ -35,7 +37,11 @@ p {
   text-align: justify;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   padding: 0;
   margin: 0;
 }
@@ -58,10 +64,12 @@ a:visited {
   color: #389c9c;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: #389c9c;
-  cursor: url("Images/Chip.svg"), auto;
+  cursor: url("Images/ChipwSD.svg"), auto;
 }
 
 abbr {
@@ -72,24 +80,25 @@ abbr {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 10px solid;
-  border-image-source: url(Images/Borderimage1.svg);
-  border-image-slice: 110;
-  border-image-width: 4;
-  border-image-outset: 1;
-  border-image-repeat: round;
-  margin: 2em;
-  padding: 2em;
+  border-left: 3px solid #ce2027;
+  border-right: 3px solid #ce2027;
+  border-top: 3px solid #ce2027;
+  margin: 1em;
+  padding: 0.5em;
   min-width: 300px;
 }
 
 @media screen and (min-width: 900px) {
   .page-wrapper {
     flex-direction: row;
+    border: 10px solid;
+    border-image-source: url(Images/Borderimage1.svg);
+    border-image-repeat: round;
     border-image-slice: 500;
     border-image-width: 6;
     border-image-outset: 1;
-    padding: 3em;
+    padding: 5em;
+    margin: 2em;
   }
 }
 .intro {
@@ -97,15 +106,11 @@ abbr {
   width: 100%;
 }
 
-.intro h1, h2 {
+.intro h1,
+h2 {
   text-align: center;
 }
 
-@media screen and (min-width: 900px) {
-  .intro {
-    grid-column: 1/4;
-  }
-}
 header {
   background: url(Images/Star.svg) center no-repeat;
   background-color: #fbd659;
@@ -142,6 +147,7 @@ header h2 {
   font-size: 1.1em;
   text-transform: lowercase;
   color: #204b4b;
+  padding-top: 0.5em;
 }
 
 @keyframes mariachi {
@@ -163,7 +169,8 @@ header h2 {
 }
 @media screen and (min-width: 900px) {
   header {
-    height: 350px;
+    height: 500px;
+    width: 450px;
   }
   header h1 {
     font-size: 2.6em;
@@ -179,17 +186,18 @@ header h2 {
 }
 
 .summary p {
+  font-size: 16px;
   text-align: center;
 }
 .summary p:nth-child(1) {
   font-size: 1.2rem;
-  margin-top: -15px;
-  padding: 10px;
 }
 .summary p:nth-child(2) {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 900;
+  width: 260px;
   padding: 25px 0;
+  margin: 0 auto;
 }
 .summary p:nth-child(2) a {
   color: #204b4b;
@@ -206,16 +214,6 @@ header h2 {
   white-space: pre-line;
 }
 
-@media screen and (min-width: 900px) {
-  .summary p:nth-child(1) {
-    font-size: 1.4rem;
-    margin-top: -15px;
-    padding: 10px;
-  }
-  .summary p:nth-child(2) {
-    font-size: 1.2rem;
-  }
-}
 .preamble {
   padding: 1em;
   margin: 1em 0;
@@ -325,9 +323,10 @@ header h2 {
   padding: 1em;
   margin: 1em 0;
   background: url(Images/Quesadillas.svg) no-repeat;
-  background-size: 220px;
+  background-size: 200px;
   background-position-x: center;
   background-position-y: 4.5em;
+  position: static;
 }
 .benefits h3 {
   height: 11em;
@@ -341,7 +340,7 @@ header h2 {
 }
 @media screen and (min-width: 900px) {
   .benefits {
-    background-size: 320px;
+    background-size: 300px;
     background-position-y: 4.5em;
   }
   .benefits h3 {
@@ -361,12 +360,22 @@ header h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
-  .supporting .explanation,
-.supporting .participation,
-.supporting .benefits,
-.supporting .requirements {
-    width: 50%;
+  .supporting .explanation {
+    width: 77%;
+    margin-top: -15px;
+  }
+  .supporting .requirements, .supporting .participation {
+    width: 77%;
+    margin-top: -25px;
+  }
+  .supporting .benefits {
+    width: 17%;
+    display: inline-block;
+    position: absolute;
+    right: 80px;
+    top: 920px;
   }
 }
 .requirements {
@@ -410,7 +419,9 @@ p[role=contentinfo] {
   font-size: 1.2rem;
   text-align: center;
 }
-p[role=contentinfo] a:link, p[role=contentinfo] a:active, p[role=contentinfo] a:visited {
+p[role=contentinfo] a:link,
+p[role=contentinfo] a:active,
+p[role=contentinfo] a:visited {
   color: #389c9c;
 }
 
@@ -478,6 +489,7 @@ footer .zen-github:before {
 .sidebar li a:link {
   color: #ffffff;
   font-weight: 100;
+  line-height: 1.8;
 }
 .sidebar li a:hover {
   color: #ce2027;
@@ -513,16 +525,16 @@ footer .zen-github:before {
 
 @media screen and (min-width: 900px) {
   .sidebar .wrapper {
-    width: 300px;
+    width: 280px;
   }
 
   .sidebar {
-    height: 800px;
+    height: 838px;
   }
 }
 .extra2 {
   height: 30vh;
-  width: 109%;
+  width: 100%;
   margin-top: -180px;
   background: url(Images/Cactibg.svg) no-repeat;
   background-position-x: center;
@@ -533,14 +545,14 @@ footer .zen-github:before {
 
 @media screen and (min-width: 900px) {
   .extra2 {
-    width: 109%;
+    width: 100%;
     height: 63vh;
-    margin-top: -260px;
+    margin-top: -200px;
     background: url(Images/Cactibg.svg) no-repeat;
     background-position-x: center;
     background-position-y: bottom;
     position: absolute;
-    z-index: 100;
+    z-index: -1;
   }
 }
 
